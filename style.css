@@ -1,0 +1,131 @@
+/* style.css */
+:root {
+    --dark-brown: #5b4636;
+    --light-yellow: #fde68a;
+    --orange-accent: #f59e0b;
+    --bg-color: #fffdf5;
+    --text-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--dark-brown);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo-container:hover {
+    transform: scale(1.05); /* Mouse over feedback for logo */
+}
+
+.logo-container img {
+    height: 60px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: var(--light-yellow);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Mouse over feedback */
+nav ul li a:hover {
+    background-color: var(--orange-accent);
+    color: var(--dark-brown);
+}
+
+/* Current page feedback */
+nav ul li a.active {
+    background-color: var(--light-yellow);
+    color: var(--dark-brown);
+    border-bottom: 3px solid var(--orange-accent);
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    color: var(--dark-brown);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--orange-accent);
+    padding-bottom: 0.5rem;
+}
+
+.content-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+    border-left: 5px solid var(--orange-accent);
+}
+
+/* Chart Placeholders for TV Page */
+.chart-container {
+    background-color: #e5e7eb;
+    border: 2px dashed #9ca3af;
+    border-radius: 8px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    color: #6b7280;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-brown);
+    color: var(--light-yellow);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+footer strong {
+    color: var(--orange-accent);
+}
