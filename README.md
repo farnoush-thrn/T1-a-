@@ -11,7 +11,7 @@ This is a demonstration website built for the **COS30045 Data Visualisation** un
 - **Custom Styling:** Styled using pure CSS to match the project's logo color scheme (Brown, Yellow, Orange).
 - **Data Placeholders:** Features a dedicated section to display KNIME charts answering 7 core questions.
 
-## GenAI Acknowledgement & Reflection
+## GenAI Acknowledgement
 As permitted by the unit guidelines, Generative AI (GitHub Copilot) was utilized during the development of this project.
 
 **How it was used:**
