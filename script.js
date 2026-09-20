@@ -1,6 +1,6 @@
 // script.js
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Navigation using JavaScript (Requirement)
+    // 1. Navigation using JavaScript 
     const navLinks = {
         'nav-home': 'index.html',
         'nav-tvs': 'televisions.html',
@@ -13,16 +13,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const element = document.getElementById(id);
         if (element) {
             element.addEventListener('click', (e) => {
-                e.preventDefault(); // Prevent default HTML link behavior
+                e.preventDefault(); 
                 window.location.href = url; // Navigate using JS
             });
         }
     }
 
-    // 2. Feedback on current page (Requirement)
+    // 2. Feedback on current page 
     // Get the current filename from URL
     let currentPage = window.location.pathname.split('/').pop();
-    if (currentPage === '') currentPage = 'index.html'; // Default to home
+    if (currentPage === '') currentPage = 'index.html';
 
     const activeMap = {
         'index.html': 'nav-home',
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById(activeId).classList.add('active');
     }
 
-    // 3. Dynamic Year for Footer (Requirement)
+    // 3. Dynamic Year for Footer 
     const yearSpan = document.getElementById('current-year');
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
